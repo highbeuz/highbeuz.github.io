@@ -1,137 +1,39 @@
-:root {
-    --primary: #1a3a5f; /* Deep Research Blue */
-    --accent: #27ae60;  /* Agricultural Green */
-    --text: #333;
-    --light-bg: #f8f9fa;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 20px 0;
 }
 
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background-color: #e9ecef;
-    color: var(--text);
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 40px auto;
+.gallery-item {
     background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.sidebar {
-    flex: 1;
-    min-width: 300px;
-    background-color: var(--primary);
-    color: white;
-    padding: 40px 30px;
+.image-container {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;     /* removes inline spacing */
+}
+
+.caption {
+    padding: 12px;
+    font-size: 0.95em;
     text-align: center;
 }
-
-.profile-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.1);
-    margin-bottom: 20px;
-    object-fit: cover;
+/* ===== FORCE 2 x 3 GALLERY GRID ===== */
+.gallery-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-auto-rows: auto;
+    gap: 25px;
+    padding: 20px 0;
 }
 
-.tagline {
-    color: #aab7c4;
-    font-size: 0.9em;
-    margin-bottom: 30px;
-}
-
-.contact-info {
-    text-align: left;
-    font-size: 0.85em;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
-    margin-bottom: 30px;
-}
-
-.social-links a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 10px 0;
-    padding: 10px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
-    background: var(--accent);
-}
-
-.content {
-    flex: 2.5;
-    padding: 50px;
-    min-width: 350px;
-}
-
-h2 {
-    color: var(--primary);
-    border-left: 5px solid var(--accent);
-    padding-left: 15px;
-    margin-top: 40px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.skill-category {
-    background: var(--light-bg);
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.skill-category h3 {
-    margin-top: 0;
-    font-size: 1em;
-    color: var(--primary);
-}
-
-.timeline-item {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed #ddd;
-}
-
-.timeline-item h4 {
-    margin: 0;
-    color: #2c3e50;
-}
-
-.date {
-    font-size: 0.85em;
-    color: var(--accent);
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .container { margin: 0; flex-direction: column; }
-    .skills-grid { grid-template-columns: 1fr; }
-}
-
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-@media (max-width: 768px) {
-    .container { margin: 10px; flex-direction: column; }
-}
