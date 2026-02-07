@@ -3,86 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Boubacar Gano | Research Scientist</title>
+    <title>Dr. Boubacar Gano | Plant Phenomics & AI</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <img src="profile.jpg" alt="Boubacar Gano" class="profile-img">
-            <h1>Boubacar Gano, PhD</h1>
-            <p class="tagline">Research Scientist | Plant Phenomics & AI</p>
-            
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> St. Louis, MO, USA</p>
-                <p><i class="fas fa-certificate"></i> FAA Part 107 Pilot</p>
-            </div>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/boubacar-gano-49b258282/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://scholar.google.com/citations?user=6d8m_2gAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                <a href="https://orcid.org/0000-0002-1395-2436" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
-            </div>
-        </aside>
-
-        <main class="content">
-            <section id="bio">
-                <h2>About Me</h2>
-                <p>I am a Postdoctoral Associate at the <strong>Donald Danforth Plant Science Center</strong>, specializing in crop ecophysiology and phenomics. My research integrates field trials with UAV and satellite-based sensing platforms to enhance precision agriculture and sustainable breeding systems.</p>
-            </section>
-
-            <section id="skills">
-                <h2>Expertise & Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-microscope"></i> Research</h3>
-                        <p>Crop Physiology, Phenomics, Plant Breeding, Experimental Design</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Data Science</h3>
-                        <p>Python, R, Machine Learning, Deep Learning, TensorFlow</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-drone"></i> Remote Sensing</h3>
-                        <p>UAV Imagery, ArcGIS, QGIS, WebODM, Feature Extraction</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-cloud"></i> Cloud Computing</h3>
-                        <p>AWS Certified Cloud Practitioner, Identity & Storage</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <h2>Professional Experience</h2>
-                <div class="timeline-item">
-                    <h4>Postdoctoral Associate</h4>
-                    <span class="date">Aug 2022 - Present | Donald Danforth Plant Science Center</span>
-                    <p>Integrating in-field ground truth measurements with UAV (Thermal, LiDAR, Multispectral) and satellite platforms. Lead developer for field experiments and remote imagery analysis.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h4>Associate Research Fellow</h4>
-                    <span class="date">Jan 2018 - Jan 2022 | ISRA CERAAS</span>
-                    <p>Calibrated high-throughput phenotyping methods using UAV imagery in Sorghum. Conducted GWAS analysis and drought tolerance QTL identification.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h4>Research Assistant</h4>
-                    <span class="date">Jun 2015 - Dec 2017 | ISRA CERAAS</span>
-                    <p>Focused on genetic diversity and millet adaptation to water deficit stress. Managed large-scale sorghum sample collection across Senegal.</p>
-                </div>
-            </section>
-
-            <section id="education">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>PhD, Plant and Microbial Biotechnologies</strong> - UCAD, 2022 (Highest Honor)</li>
-                    <li><strong>MS, Plant and Microbial Biotechnologies</strong> - UCAD, 2015 (Grade A+)</li>
-                </ul>
-            </section>
-        </main>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Boubacar Gano</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+    <div class="hero-content">
+        <img src="profile.jpg" alt="Boubacar Gano" class="profile-img">
+        <h1>Boubacar Gano, PhD</h1>
+        <p class="hero-tagline">Research Scientist · Plant Phenomics · AI · Remote Sensing</p>
+
+        <div class="hero-links">
+            <a href="https://www.linkedin.com/in/boubacar-gano-49b258282/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=6d8m_2gAAAAJ&hl=en" target="_blank">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://orcid.org/0000-0002-1395-2436" target="_blank">
+                <i class="fab fa-orcid"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+
+    <!-- ABOUT -->
+    <section class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a <strong>Postdoctoral Associate</strong> at the
+            <strong>Donald Danforth Plant Science Center</strong>, specializing in
+            crop ecophysiology, phenomics, and artificial intelligence. My research integrates field experiments
+            with UAV and satellite-based sensing platforms to enhance precision
+            agriculture and sustainable breeding systems.
+        </p>
+
+        <div class="about-meta">
+            <span><i class="fas fa-map-marker-alt"></i> St. Louis, MO, USA</span>
+            <span><i class="fas fa-certificate"></i> FAA Part 107 Pilot</span>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section light">
+        <h2>Expertise & Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-microscope"></i> Research</h3>
+                <p>Crop Physiology, Phenomics, Plant Breeding, Experimental Design</p>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Data Science</h3>
+                <p>Python, R, Machine Learning, Deep Learning, TensorFlow</p>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-drone"></i> Remote Sensing</h3>
+                <p>UAV Imagery, ArcGIS, QGIS, WebODM, Feature Extraction</p>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> Cloud Computing</h3>
+                <p>AWS Certified Cloud Practitioner, Identity & Storage</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="timeline-item">
+            <h4>Postdoctoral Associate</h4>
+            <span class="date">Aug 2022 – Present · Donald Danforth Plant Science Center</span>
+            <p>
+                Integrating in-field ground truth measurements with UAV
+                (Thermal, LiDAR, Multispectral) and satellite platforms.
+                Lead developer for field experiments and remote imagery analysis.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>Associate Research Fellow</h4>
+            <span class="date">Jan 2018 – Jan 2022 · ISRA CERAAS</span>
+            <p>
+                Calibrated high-throughput phenotyping methods using UAV imagery
+                in sorghum. Conducted GWAS analysis and drought tolerance QTL
+                identification.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>Research Assistant</h4>
+            <span class="date">Jun 2015 – Dec 2017 · ISRA CERAAS</span>
+            <p>
+                Focused on genetic diversity and millet adaptation to water
+                deficit stress. Managed large-scale sorghum sample collection
+                across Senegal.
+            </p>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section light">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>
+                <strong>PhD, Plant and Microbial Biotechnologies</strong><br>
+                UCAD, 2022 — Highest Honor
+            </li>
+            <li>
+                <strong>MS, Plant and Microbial Biotechnologies</strong><br>
+                UCAD, 2015 — Grade A+
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© 2026 Boubacar Gano · Research Scientist</p>
+</footer>
+
 </body>
 </html>
