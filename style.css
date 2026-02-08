@@ -140,6 +140,11 @@ a {
     padding-left: 15px;
 }
 
+.section h3 {
+    color: #1f2f44;
+    margin-bottom: 10px;
+}
+
 /* ===== ABOUT ===== */
 .about-meta {
     display: flex;
@@ -270,6 +275,32 @@ a {
     font-size: 0.9rem;
 }
 
+/* ===== RESEARCH ===== */
+.research-block {
+    margin-bottom: 60px;
+}
+
+.figure-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.figure-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.figure-grid figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    color: #555;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background: #10263f;
@@ -298,7 +329,8 @@ a {
         gap: 15px;
     }
 
-    .gallery-grid {
+    .gallery-grid,
+    .figure-grid {
         grid-template-columns: 1fr;
     }
 }
