@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Boubacar Gano, PhD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- ================= TEXT SIZE OVERRIDES ================= -->
+    <style>
+        body {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .caption {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Boubacar Gano</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="main-content">
+
+    <!-- ================= EARLY CAREER ================= -->
+    <section class="section">
+        <h2>Early Career Research (MSc)</h2>
+        <p>
+            During my early research career at CERAAS (Thiès, Senegal) as an MSc intern, my
+            work focused on identifying contrasting millet (Pennisetum glaucum) accessions
+            for terminal drought tolerance. This research combined detailed phenotypic
+            characterization of drought-related traits with genotypic analyses to
+            distinguish tolerant and sensitive accessions under water-limited conditions.
+        </p>
+        <p>
+            Building on this experience, I contributed to a large-scale study of sorghum
+            genetic diversity from marginal production environments in Senegal using SSR
+            molecular markers. This work involved extensive field surveys, farmer-led
+            landrace collection, laboratory-based genotyping, and population genetic
+            analyses.
+        </p>
+        <p>
+            The study provided one of the first insights into the structure and diversity
+            of sorghum landraces cultivated in marginal agroecological zones, supporting
+            sustainable in situ conservation and genetic resource management.
+        </p>
+    </section>
+
+    <!-- ================= PHD RESEARCH ================= -->
+    <section class="section light">
+        <h2>PhD Research – UAV High-Throughput Phenotyping for Drought Tolerance</h2>
+        
+        <p>
+            My PhD research evaluated the potential of UAV-based high-throughput
+            phenotyping to accelerate sorghum breeding under water-limited
+            conditions. Multi-environment field experiments conducted in Senegal
+            under contrasting irrigation regimes integrated UAV-mounted
+            multispectral imagery with ground-based measurements.
+        </p>
+        <p>
+            Vegetation indices including NDVI, GNDVI, and MSAVI2 showed strong and
+            consistent correlations with field-measured LAI and biomass
+            (R² > 0.80) across growth stages, enabling robust regression-based
+            prediction of drought-related traits.
+        </p>
+        <p style="margin-top:40px;">
+            Cross-environment analyses showed that while UAV phenotyping is scalable
+            and efficient, site-specific model calibration is required when canopy
+            structure, soil background, or management practices differ.
+        </p>
+
+        <!-- Figure moved below the regression text -->
+        <div class="gallery-item" style="margin: 40px auto; max-width: 900px;">
+            <div class="image-container">
+                <img src="PhD_VImodels.png" alt="Vegetation index regression models">
+            </div>
+            <div class="caption">
+                Regression relationships between UAV-derived vegetation indices and
+                LAI/biomass under well-watered and drought-stressed conditions.
+            </div>
+        </div>
+
+        <p style="margin-top:40px;">
+            UAV-derived plant height estimates were obtained using DSM–DTM approaches and
+            showed strong agreement with ground-based measurements throughout the growing
+            season, demonstrating the robustness of UAV-based structural trait extraction.
+        </p>
+
+        <div class="gallery-item" style="margin-top:30px;">
+            <div class="image-container">
+                <img src="PhD_Plant_height.png" alt="Plant height estimation">
+            </div>
+            <div class="caption">
+                Comparison of UAV-derived and ground-measured plant height across days
+                after sowing.
+            </div>
+        </div>
+
+        <p>
+            A comparative genome-wide association study (GWAS) using both manually
+            measured and UAV-derived biomass identified identical genomic regions
+            associated with drought tolerance, validating UAV phenotyping as a
+            reliable substitute for traditional methods.
+        </p>
+
+        <strong>
+            Overall, this work demonstrates that UAV-based phenotyping is a powerful,
+            non-destructive tool for integrating phenomics and genomics to accelerate
+            the selection of drought-resilient sorghum genotypes.
+        </strong>
+    </section>
+
+    <!-- ================= POSTDOC ================= -->
+    <section class="section">
+        <h2>Postdoctoral Research</h2>
+
+        <h3>UAV-Based Soil Property Modeling Using Machine Learning</h3>
+        <div class="gallery-grid" style="align-items:center;">
+            <div class="gallery-item" style="box-shadow:none; background:none;">
+                <p>
+                    During my postdoctoral research, I developed a non-destructive
+                    framework to predict soil nitrate (SNO₃) and soil organic carbon (SOC)
+                    using UAV-based multispectral imagery and machine learning. LASSO yielded the best SOC predictions (R² up to 0.74), while XGBoost
+                    performed best for nitrate prediction (R² up to 0.58).
+                </p>
+                <p>
+                    This work demonstrates the potential of UAV-based phenotyping to support cost-effective soil health assessment.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="soil_models_metrics.png" alt="Soil model performance">
+                </div>
+                <div class="caption">
+                    Performance metrics for SOC and nitrate prediction models.
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top:60px;">Grain Quality Modeling Using UAV and Machine Learning</h3>
+        <p>
+            I led a multi-year (2023–2024) study integrating machine learning, UAV-based phenotyping, physiological measurements, and agronomic management data to model key sorghum grain biochemical traits. Using commercial sorghum hybrids grown under different management practices (precision nitrogen, cover cropping, and no-till), we developed predictive models for crude protein, starch, amylose, lysine, and crude fat with the goal of reducing reliance on costly laboratory analyses. Regularized regression models (LASSO, ELN) achieved high predictive accuracy for protein and amylose, while PLS and Bayesian Ridge performed best for starch and lysine.
+        </p>
+        <p>
+            The study revealed strong genotype × management × year interactions and highlighted the importance of multi-year data for model generalization. Our results demonstrate the potential of combining UAV-derived indices, physiological traits, and machine learning to support cost-effective grain quality assessment and precision breeding strategies in sorghum.
+        </p>
+        <div class="gallery-item" style="margin-top:30px;">
+            <div class="image-container">
+                <img src="Grain_quality_models.png" alt="Grain quality model performance">
+            </div>
+            <div class="caption">
+                Observed versus predicted grain quality traits across models.
+            </div>
+        </div>
+
+        <!-- ================= LODGING ================= -->
+        <h3 style="margin-top:60px;">
+            Hybrid Deep-Supervised Learning for Lodging Detection and Spatial Analysis (Ongoing)
+        </h3>
+
+        <div class="gallery-item" style="box-shadow:none; background:none;">
+            <p>
+                This ongoing project develops a UAV-based high-throughput phenotyping framework to detect, classify, and predict sorghum lodging across environments, addressing the limitations of labor-intensive and subjective field scoring. Multispectral drone imagery, ground phenotypic measurements, and hybrid machine learning models were integrated across multi-location trials in Missouri and South Carolina during the 2023–2024 seasons. Convolutional neural networks were used for feature extraction and coupled with Random Forest and XGBoost models to classify lodging type (root, stem, or non-lodged) with accuracies up to ~91% and to predict lodging severity with moderate but meaningful performance (R² ≈ 0.47–0.67). Spatial lodging maps revealed strong genotype-by-environment interactions, highlighting the combined roles of plant architecture and physiological traits in lodging susceptibility.
+            </p>
+            <p>
+                Overall, this work demonstrates the potential of UAV-enabled hybrid modeling as a scalable and objective tool for lodging phenotyping, supporting the selection of lodging-resilient sorghum genotypes and improved crop management strategies.
+            </p>
+        </div>
+
+        <!-- Lodging map moved below the text -->
+        <div class="gallery-item" style="margin: 40px auto; max-width: 900px;">
+            <div class="image-container">
+                <img src="lodging_maps.png" alt="Sorghum lodging maps" style="width:100%;">
+            </div>
+            <div class="caption">
+                Spatial lodging intensity maps derived from UAV imagery.
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2026 Boubacar Gano · Research Scientist
+</footer>
+
+</body>
+</html>
